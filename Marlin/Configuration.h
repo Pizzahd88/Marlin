@@ -493,9 +493,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   
   // PHD - Ender 3 Pro with Hero Me Gen 4 cooling duct at 75% speed
-  #define DEFAULT_Kp 30.16
-  #define DEFAULT_Ki 3.04
-  #define DEFAULT_Kd 74.77
+  #define DEFAULT_Kp 26.28
+  #define DEFAULT_Ki 2.34
+  #define DEFAULT_Kd 73.66
 
   // Creality Ender-3 - MK8 Hotend fan 100%
   //#define DEFAULT_Kp 21.73
