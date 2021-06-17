@@ -871,7 +871,7 @@
 #define X_DRIVER_TYPE  TMC2209 // PHD
 #define Y_DRIVER_TYPE  TMC2209 // PHD
 #define Z_DRIVER_TYPE  TMC2209 // PHD
-//#define Z2_DRIVER_TYPE TMC2209 // PHD
+#define Z2_DRIVER_TYPE TMC2209 // PHD - Dual Z
 #define E0_DRIVER_TYPE TMC2209 // PHD
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
