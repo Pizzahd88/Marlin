@@ -1382,12 +1382,18 @@
 // The size of the printable area
 //#define X_BED_SIZE 200
 //#define Y_BED_SIZE 200
-#define X_BED_SIZE 235 // PHD
-#define Y_BED_SIZE 235 // PHD
+
+#define BED_CLIP_SIZE 10 // PHD - The safety margin to allocate to bed clips to avoid collisions.
+#define X_BED_SIZE 235 - BED_CLIP_SIZE * 2 // PHD
+#define Y_BED_SIZE 235 - BED_CLIP_SIZE * 2// PHD
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+// #define X_MIN_POS 0
+// #define Y_MIN_POS 0
+// #define Z_MIN_POS 0
+// PHD NOTE: Adding value to X will move 0 value to the right. Adding value to Y will move 0 forward
+#define X_MIN_POS + 2 - BED_CLIP_SIZE // PHD Ender 3 endstops are hit 2mm from edge of bed
+#define Y_MIN_POS - 4 - BED_CLIP_SIZE // PHD Ender 3 endstops are hit 3mm from edge of bed (Y endstop is reversed)
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
